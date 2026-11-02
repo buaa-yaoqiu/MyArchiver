@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ExperimentArchive · 实验归档</title><link rel="icon" href="/icon.svg"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/translation.css"></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="#" id="brand"><img src="/icon.svg" alt=""><span>Experiment<span class="brand-light">Archive</span></span></a>
+  <div class="workspace-label">研究工作空间</div>
+  <nav aria-label="主导航">
+    <button class="nav-item active" data-page="library"><span class="nav-icon">▦</span>实验归档<span id="nav-count" class="nav-count">—</span></button>
+    <button class="nav-item" data-page="search"><span class="nav-icon">⌕</span>语义检索</button>
+    <button class="nav-item" data-page="jobs"><span class="nav-icon">↻</span>运行任务<span id="job-dot"></span></button>
+    <button class="nav-item" data-page="settings"><span class="nav-icon">⚙</span>来源与接入</button>
+  </nav>
+  <div class="sidebar-note"><span class="status-dot"></span><div><strong>全部保存在本地</strong><span>文件、索引与检索都由你掌握</span></div></div>
+  <div class="sidebar-footer"><div class="avatar">EA</div><div><strong>本地归档库</strong><span id="sidebar-state">正在连接…</span></div><span class="footer-mark">↗</span></div>
+</aside>
+<main>
+  <header class="topbar"><div class="breadcrumb"><span>工作空间</span><span>/</span><strong id="breadcrumb">实验归档</strong></div><div class="top-actions"><span id="index-state" class="connection"><span class="status-dot"></span>正在连接</span><button id="verify-button" class="button ghost small">校验归档</button><button id="sync-button" class="button primary small"><span>↻</span> 同步归档</button></div></header>
+  <div id="content" class="content" aria-live="polite"></div>
+</main>
+<div id="toast" class="toast" role="status"></div>
+<script src="/app.js"></script>
+</body></html>

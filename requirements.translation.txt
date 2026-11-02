@@ -1,0 +1,3 @@
+# Optional, tested local translation runtime. Models are downloaded separately.
+ctranslate2==4.8.4
+sentencepiece==0.2.2

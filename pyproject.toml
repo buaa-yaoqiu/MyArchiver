@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "experiment-archive"
+version = "0.1.0"
+description = "Local, evidence-linked experiment archive with CSV and multilingual semantic retrieval"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.urls]
+Repository = "https://github.com/buaa-yaoqiu/MyArchiver"
+
+[project.optional-dependencies]
+semantic = ["onnxruntime>=1.20,<2", "tokenizers>=0.20,<1", "huggingface-hub>=0.27,<2"]
+ui-test = ["playwright>=1.50,<2"]
+translation-local = ["ctranslate2>=4.5,<5", "sentencepiece>=0.2,<1"]
+
+[project.scripts]
+experiment-archive = "experiment_archive.cli:main"
+experiment-archive-app = "experiment_archive.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+experiment_archive = ["ui/*.html", "ui/*.css", "ui/*.js", "ui/*.svg"]

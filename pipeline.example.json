@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "my_project",
+      "adapter": "bundle",
+      "path": "../my_project/archive_export",
+      "options": {}
+    }
+  ]
+}
